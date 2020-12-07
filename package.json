@@ -4,11 +4,18 @@
   "description": "Audio-to-Text is a Google Cloud Function triggered by an HTTP request that calls the Google Cloud Speech API",
   "main": "index.js",
   "dependencies": {
+    "@google-cloud/speech": "^2.3.0",
     "busboy": "^0.3.0",
-    "@google-cloud/speech": "^2.3.0"
+    "cloudconvert": "^2.1.6",
+    "linear16": "^1.2.0",
+    "run-func": "^1.0.5"
+  },
+  "scripts": {
+    "myFunc": "run-func index.js convertToText"
   },
   "devDependencies": {
-    "eslint": "5.14.1"
+    "eslint": "5.14.1",
+    "express": "^4.17.1"
   },
   "repository": {
     "type": "git",
